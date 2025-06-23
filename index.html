@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orologio</title>
+  <link rel="icon" href="favicon.ico" />
   <script type="module" crossorigin src="/orologio/assets/index-D-416_fM.js"></script>
   <link rel="stylesheet" crossorigin href="/orologio/assets/index-l0pbBtER.css">
 </head>
@@ -27,7 +28,6 @@
       }
     };
 
-    document.addEventListener('visibilitychange', handleVisibilityChange);
     window.setInterval(() => {
       if ((wakeLock === null || wakeLock.released) && document.visibilityState === 'visible') {
         wakeLock.release();
